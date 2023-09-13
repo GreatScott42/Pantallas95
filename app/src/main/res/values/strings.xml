@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pantallas95</string>
+    <string name="acerca">Esta app es una demostracion de la aplicacion de diferentes pantallas navegables y que han sido modificadas mediante sus archivos xmls</string>
 </resources>
