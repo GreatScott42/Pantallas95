@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="splash_entries">
+        <item>3 segundos</item>
+        <item>5 segundos</item>
+        <item>7 segundos</item>
+    </string-array>
+
+    <string-array name="splash_values">
+        <item>3000</item>
+        <item>5000</item>
+        <item>7000</item>
+    </string-array>
+</resources>

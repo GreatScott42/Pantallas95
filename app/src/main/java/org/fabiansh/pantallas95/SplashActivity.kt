@@ -9,6 +9,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationSet
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
+import androidx.preference.PreferenceManager
 
 class SplashActivity : AppCompatActivity() {
 
@@ -16,6 +17,9 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        val value = sharedPreferences.getString("splash_time", "1000")
 
         // Load the fade-in animation
         val fadeIn = AnimationUtils.loadAnimation(applicationContext, R.anim.fadein)
@@ -59,9 +63,9 @@ class SplashActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animation?) {
                 // Animation ended; proceed to MainActivity
-                val intent = Intent(this@SplashActivity, MainActivity::class.java)
-                startActivity(intent)
-                finish() // Optional: Close the splash screen activity
+                //val intent = Intent(this@SplashActivity, MainActivity::class.java)
+                //startActivity(intent)
+                //finish() // Optional: Close the splash screen activity
             }
 
             override fun onAnimationRepeat(animation: Animation?) {
