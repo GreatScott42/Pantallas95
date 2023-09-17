@@ -5,10 +5,10 @@
         android:id="@+id/acerca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Acerca" />
+        android:title="@string/acercaTitle" />
     <item
         android:id="@+id/preferencias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Preferencias" />
+        android:title="@string/prefrenceTitle" />
 </menu>
